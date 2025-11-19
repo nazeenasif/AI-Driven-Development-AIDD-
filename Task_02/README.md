@@ -28,7 +28,22 @@ Developer.
 - Q2: Explain why developers must think in layers and systems instead of raw code.
 
     Developers must think in layers and systems because writing raw code or syntax is now AI's job. If a developer wants a task to be          completed correctly, they must first provide clear specifications for the AI to follow. If the specifications are not clear, AI may        not produce correct functions, and the system may not work. Raw coding creates short-term progress but long-term chaos.
-  
+
+
+## 📁 Part B — Practical Task
+#### Task:
+   Using any AI CLI tool, generate a 1-paragraph specification for an email validation function.
+#### Requirements:
+   -Must contain “@”  
+   -Must contain a valid domain (e.g., .com, .org)   
+   -Should return clear error messages   
+
+#### CLI Prompt:
+  Generate a 1-paragraph specification for an email validation function that must contain “@”, must contain a valid domain such as .com or   .org, and should return clear error messages when validation fails.
+
+##### Specification:
+The email validation function should verify that the input contains an “@” symbol separating the local part and domain, and ensure the domain ends with a valid extension such as .com, .org, or other standard TLDs. The function must check for common formatting errors, including missing characters before or after the “@”, invalid domain structures, or unsupported extensions. When the input fails validation, the function should return clear, descriptive error messages that help the user understand the exact issue, such as “Missing @ symbol,” “Invalid domain extension,” or “Email format incomplete.” If all checks pass, the function should return a success response indicating the email is valid.
+
 ## 📁Part C — Multiple Choice Questions
 1. What is the main purpose of Spec-Driven Development?
    
