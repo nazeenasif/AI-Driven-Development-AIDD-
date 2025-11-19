@@ -44,6 +44,8 @@ Developer.
 ##### Specification:
 The email validation function will assess a given string to confirm its structural validity as an email address. The function must verify that the string contains exactly one "@" symbol, which serves to separate a non-empty local-part from a domain. The domain must also be non-empty and include a valid Top-Level Domain (TLD), such as ".com" or ".org", appearing after the final period. In cases where the input string fails any of these checks, the function will return a clear, descriptive error message specifying the nature of the failure—for example, "Email must contain an '@' symbol" or "Email is missing a valid domain extension." If the email string adheres to all the specified rules, the function will indicate successful validation.
 
+#### Screen Shot
+![Screen Shot](https://github.com/nazeenasif/AI-Driven-Development-AIDD-30-Days-Challenge/blob/main/Task_02/Screen%20shot.jpeg?raw=true)
 ## 📁Part C — Multiple Choice Questions
 1. What is the main purpose of Spec-Driven Development?
    
