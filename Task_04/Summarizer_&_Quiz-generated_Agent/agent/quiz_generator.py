@@ -1,5 +1,6 @@
 import sys
 import os
+import streamlit as st
 import requests
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -11,7 +12,7 @@ from agent.agent_core import agent  # LLM Agent import
 # -------------------
 # OpenRouter API Config
 # -------------------
-OPENROUTER_API_KEY = "[Your_API_key]"  # <-- Replace with your OpenRouter API key
+OPENROUTER_API_KEY = st.secrets["MY_API_KEY"] # <-- Replace with your OpenRouter API key
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "google/gemini-2.5-flash-lite"  # ✅ Valid model
 
