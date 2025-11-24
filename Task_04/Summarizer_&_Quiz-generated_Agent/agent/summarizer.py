@@ -1,6 +1,7 @@
 import os
 import sys
 import requests
+import streamlit as st
 from utils.pdf_reader import extract_text_from_pdf
 from utils.text_cleaner import clean_text
 
@@ -8,7 +9,7 @@ from utils.text_cleaner import clean_text
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # IMPORTANT → Use your OpenRouter API key here
-OPENROUTER_API_KEY = "[Your_API_key]"  # <- Replace this
+OPENROUTER_API_KEY = st.secrets["MY_API_KEY"]  # <- Replace this
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "google/gemini-2.5-flash-lite"  # Gemini model via OpenRouter
